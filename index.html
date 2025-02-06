@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/iconWM.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Links</title>
@@ -58,10 +59,10 @@
                     class="border-2 border-solid border-purple-500 text-purple-500 rounded-lg p-2  
                     cursor-pointer hover:bg-black hover:text-white transition duration-300 
                     text-xl  font-semibold "> 
-                    <div class="flex flex-row items-center justify-center gap-4">
-                        <img src="assets/instagram.png" alt="instagram" class="w-8 lg:ml-4">
-                        <p class="lg:mr-4">Instagram</p>
-                    </div>
+                        <a href="https://www.instagram.com/wellingtonwww1" class="flex flex-row items-center justify-center gap-4">
+                            <img src="assets/instagram.png" alt="instagram" class="w-8 lg:ml-4">
+                            <p class="lg:mr-4">Instagram</p>
+                        </a>
                     </button>
     
                     <button type="button" 
@@ -99,7 +100,7 @@
                     class="border-2 border-solid border-white text-white rounded-lg p-2 
                     cursor-pointer hover:bg-black hover:text-white  transition duration-300 
                     text-xl  font-semibold">
-                    <div class="flex flex-row items-center justify-center gap-4 pr-5">
+                    <div class="flex flex-row items-center justify-center gap-4 pr-5" onclick={window.alert(message)}>
                         <img src="assets/ppower.png" alt="github" class="w-8 lg:ml-4">
                         <p>Portfólio</p>
                     </div>
@@ -108,5 +109,8 @@
             </div>
       
     </div>
+    <script>
+        var message = "Em breve..."
+    </script>
 </body>
 </html>
